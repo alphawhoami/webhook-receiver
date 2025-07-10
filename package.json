@@ -1,13 +1,14 @@
 {
-  "name": "webhook-vercel",
+  "name": "webhook-receiver",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
+  "description": "Simple Webhook Test (HB)",
+  "main": "server.js",
   "scripts": {
-    "dev": "vercel dev"
+    "start": "node server.js"
   },
   "dependencies": {
-    "ejs": "^3.1.9"
-  }
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  },
+  "license": "MIT"
 }
-
