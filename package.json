@@ -1,7 +1,8 @@
 {
-  "name": "webhook-receiver",
+  "name": "webhook-vercel",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "dev": "vercel dev"
   },
