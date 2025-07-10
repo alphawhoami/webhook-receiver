@@ -13,7 +13,7 @@ let lastBody = {};
 let queryParams = {};
 
 app.post('/webhook', (req, res) => {
-    lastHeaders = req.headers;
+    lastHeaders = Object.fromEntries(Object.entries(req.headers).filter(([key]) => !key.startsWith('x-vercel')));
     lastBody = req.body;
     res.status(200).send('Received');
 });
